@@ -349,7 +349,7 @@
                     form, by injected humour.
                 </p>
             </div>
-            <div class="flex justify-center gap-7 flex-colums lg:flex-row ">
+            <div class="flex justify-center  gap-7 flex-colums lg:flex-row ">
                 <!-- Contact Container -->
                 <div>
                     <!-- Contact Details Container -->
@@ -386,28 +386,73 @@
                 </div>
                 <!-- Contact Form -->
                 <div>
-                    <form>
+                    <form class="w-full">
                         <label for="userName" class="block">
                             <input type="text" name="userName" id="userName" placeholder="Your Name"
-                                class="bg-[#F3F3F3]">
+                                class="bg-[#F3F3F3] w-[550px] h-[72px] p-8 rounded-lg outline-none">
 
                         </label>
                         <br>
                         <label for="userEmail" class="block">
                             <input type="email" name="userEmail" id="userEmail" placeholder="Your Email"
-                                class="bg-[#F3F3F3] w-full">
+                                class="bg-[#F3F3F3] w-[550px] h-[72px] p-8 rounded-lg outline-none">
                         </label>
                         <br>
                         <label for="userMassage" class="block">
-                            <textarea name="userMassage" id="userMassage" rows="10" placeholder="Your Message"
-                                class="bg-[#F3F3F3]"></textarea>
+                            <textarea name="userMassage" id="userMassage" rows="5" cols="64" placeholder="Your Message"
+                                class="bg-[#F3F3F3] p-8 rounded-lg outline-none"></textarea>
                         </label>
+                        <br>
+                        <input type="submit" value="Send Message"
+                            class="w-full bg-[#B68C5A] p-6 rounded-lg text-white font-poppins cursor-pointer">
                     </form>
                 </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="footer p-10 bg-[#111111] mt-[140px] pt-[120px] ">
+        <nav>
+            <header class="footer-title">
+                <img src="./images/footerLogo.png" alt="">
+            </header>
+            <p class="text-left text-white">
+                There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>
+                suffered
+                alteration in some <br> form, by injected humour.
+            </p>
+
+        </nav>
+        <nav class="text-white">
+            <header class="footer-title font-eb_garamond text-white">Usefull Link</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="text-white">
+            <header class="footer-title font-eb_garamond">Contact Now</header>
+            <a class="link link-hover">555 4th 5t NW, Washington <br>
+                DC 20530, United States</a>
+            <a class="link link-hover">+88 01750 000 000 <br>
+                +88 01750 000 000</a>
+            <a class="link link-hover">info@gmail.com <br>
+                info@gmail.com</a>
+        </nav>
+        <form class="text-white">
+            <header class="footer-title font-eb_garamond text-white">Subscribe</header>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text text-white">Subscribe for our latest & <br> Articles. We Won’t Give You <br>
+                        Spam
+                        Mails</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="Email Address" class="input input-bordered join-item text-black" />
+                    <button class="join-item"><img src="./images/aero.png" alt="" class=" w-[50px]"></button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
 </body>
 
 </html>
